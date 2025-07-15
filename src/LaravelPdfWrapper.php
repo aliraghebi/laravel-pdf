@@ -10,11 +10,11 @@ class LaravelPdfWrapper
 {
     /**
      * @param array $config optional, default []
-     * @return LaravelPdf
+     * @return PdfFile
      */
     public function getPdf($config = [])
     {
-        return new LaravelPdf($config);
+        return new PdfFile($config);
     }
 
     /**

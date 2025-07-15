@@ -7,7 +7,7 @@ use Mpdf\Output\Destination;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Traits\Macroable;
 
-class LaravelPdf
+class PdfFile
 {
     use Macroable;
 
