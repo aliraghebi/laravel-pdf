@@ -1,29 +1,34 @@
 {
-    "name": "arsamme/laravel-pdf",
-    "description": "Laravel Mpdf: Using Mpdf in Laravel to generate Pdfs.",
-    "keywords": ["mpdf", "pdf", "laravel"],
-    "license": "MIT",
-    "require": {
-        "php": "^7.0|^8.0",
-        "mpdf/mpdf": "^8.0|^8.1|^8.2"
-    },
-    "require-dev": {
-        "laravel/framework": "^10.0|^11.0|^12.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "ArsamMe\\LaravelPdf\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "ArsamMe\\LaravelPdf\\LaravelPdfServiceProvider"
-            ],
-            "aliases": {
-                "PDF": "PDF",
-                "LaravelPdf": "PDF"
-            }
-        }
+  "name": "arsamme/laravel-pdf",
+  "description": "Laravel Mpdf: Using Mpdf in Laravel to generate Pdfs.",
+  "keywords": [
+    "mpdf",
+    "pdf",
+    "laravel"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^7.0|^8.0",
+    "mpdf/mpdf": "^8.0|^8.1|^8.2"
+  },
+  "require-dev": {
+    "laravel/framework": "^10.0|^11.0|^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ArsamMe\\LaravelPdf\\": "src/"
     }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ArsamMe\\LaravelPdf\\LaravelPdfServiceProvider"
+      ],
+      "aliases": {
+        "PDF": "ArsamMe\\LaravelPdf\\Facades\\LaravelPdf",
+        "Pdf": "ArsamMe\\LaravelPdf\\Facades\\LaravelPdf",
+        "LaravelPdf": "ArsamMe\\LaravelPdf\\Facades\\LaravelPdf"
+      }
+    }
+  }
 }
