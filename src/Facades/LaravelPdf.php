@@ -2,13 +2,11 @@
 
 namespace ArsamMe\LaravelPdf\Facades;
 
-use ArsamMe\LaravelPdf\PdfFile as Pdf;
-use ArsamMe\LaravelPdf\LaravelPdfWrapper;
-use Illuminate\Support\Facades\Facade as BaseFacade;
+use ArsamMe\LaravelPdf\LaravelPdfFactory;
+use Illuminate\Support\Facades\Facade;
 
-class LaravelPdf extends BaseFacade
+class LaravelPdf extends Facade
 {
-
     /**
      * Get the registered name of the component.
      *
@@ -16,6 +14,6 @@ class LaravelPdf extends BaseFacade
      */
     protected static function getFacadeAccessor()
     {
-        return LaravelPdfWrapper::class;
+        return LaravelPdfFactory::class;
     }
 }

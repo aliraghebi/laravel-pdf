@@ -4,8 +4,11 @@
     "keywords": ["mpdf", "pdf", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^5.6|^7.0|^8.0",
+        "php": "^7.0|^8.0",
         "mpdf/mpdf": "^8.0|^8.1|^8.2"
+    },
+    "require-dev": {
+        "laravel/framework": "^10.0|^11.0|^12.0"
     },
     "autoload": {
         "psr-4": {
@@ -18,8 +21,8 @@
                 "ArsamMe\\LaravelPdf\\LaravelPdfServiceProvider"
             ],
             "aliases": {
-                "PDF": "ArsamMe\\LaravelPdf\\Facades\\LaravelPdf",
-                "LaravelPdf": "ArsamMe\\LaravelPdf\\Facades\\LaravelPdf"
+                "PDF": "PDF",
+                "LaravelPdf": "PDF"
             }
         }
     }

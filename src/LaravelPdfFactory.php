@@ -4,17 +4,16 @@ namespace ArsamMe\LaravelPdf;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
-use Meneses\LaravelPdf\LaravelPdf as Pdf;
 
-class LaravelPdfWrapper
+class LaravelPdfFactory
 {
     /**
      * @param array $config optional, default []
-     * @return PdfFile
+     * @return PdfBuilder
      */
     public function getPdf($config = [])
     {
-        return new PdfFile($config);
+        return new PdfBuilder($config);
     }
 
     /**
