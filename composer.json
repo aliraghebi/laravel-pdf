@@ -1,5 +1,5 @@
 {
-    "name": "arsamme/laravel-mpdf",
+    "name": "arsamme/laravel-pdf",
     "description": "Laravel Mpdf: Using Mpdf in Laravel to generate Pdfs.",
     "keywords": ["mpdf", "pdf", "laravel"],
     "license": "MIT",
