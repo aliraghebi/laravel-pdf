@@ -104,8 +104,10 @@ class PdfBuilder implements Responsable
         return $this->mpdf->Output('', Destination::STRING_RETURN);
     }
 
-    public function name(string $downloadName): self
+    public function name(?string $downloadName = null): self
     {
+        $downloadName ??= 'download';
+
         if (!str_ends_with(strtolower($downloadName), '.pdf')) {
             $downloadName .= '.pdf';
         }
@@ -147,7 +149,7 @@ class PdfBuilder implements Responsable
 
     public function download(?string $downloadName = null): self
     {
-        $this->downloadName ?: $this->name($downloadName ?? 'download');
+        $this->name($downloadName);
 
         $this->addHeaders([
             'Content-Type' => 'application/pdf',
@@ -157,7 +159,7 @@ class PdfBuilder implements Responsable
         return $this;
     }
 
-    public function inline(string $downloadName = ''): self
+    public function inline(?string $downloadName = null): self
     {
         $this->name($downloadName);
 
