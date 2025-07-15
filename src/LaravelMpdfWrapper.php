@@ -1,6 +1,6 @@
 <?php
 
-namespace Mccarlosen\LaravelMpdf;
+namespace ArsamMe\LaravelMpdf;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;

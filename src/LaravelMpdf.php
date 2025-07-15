@@ -1,6 +1,6 @@
 <?php
 
-namespace Mccarlosen\LaravelMpdf;
+namespace ArsamMe\LaravelMpdf;
 
 use Mpdf\Mpdf;
 use Mpdf\Output\Destination;
