@@ -1,19 +1,13 @@
 <?php
 
-namespace ArsamMe\LaravelMpdf;
+namespace ArsamMe\LaravelPdf;
 
 use Mpdf\Mpdf;
 use Mpdf\Output\Destination;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Traits\Macroable;
 
-/**
- * Laravel Mpdf: mPDF wrapper for Laravel
- *
- * @package laravel-mpdf
- * @author Carlos Meneses
- */
-class LaravelMpdf
+class LaravelPdf
 {
     use Macroable;
 

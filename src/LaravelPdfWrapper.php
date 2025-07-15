@@ -1,20 +1,20 @@
 <?php
 
-namespace ArsamMe\LaravelMpdf;
+namespace ArsamMe\LaravelPdf;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
-use Meneses\LaravelMpdf\LaravelMpdf as Pdf;
+use Meneses\LaravelPdf\LaravelPdf as Pdf;
 
-class LaravelMpdfWrapper
+class LaravelPdfWrapper
 {
     /**
      * @param array $config optional, default []
-     * @return LaravelMpdf
+     * @return LaravelPdf
      */
     public function getPdf($config = [])
     {
-        return new LaravelMpdf($config);
+        return new LaravelPdf($config);
     }
 
     /**

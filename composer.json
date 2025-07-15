@@ -9,16 +9,17 @@
     },
     "autoload": {
         "psr-4": {
-            "ArsamMe\\LaravelMpdf\\": "src/"
+            "ArsamMe\\LaravelPdf\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ArsamMe\\LaravelMpdf\\LaravelMpdfServiceProvider"
+                "ArsamMe\\LaravelPdf\\LaravelPdfServiceProvider"
             ],
             "aliases": {
-                "PDF": "ArsamMe\\LaravelMpdf\\Facades\\LaravelMpdf"
+                "PDF": "ArsamMe\\LaravelPdf\\Facades\\LaravelPdf",
+                "LaravelPdf": "ArsamMe\\LaravelPdf\\Facades\\LaravelPdf"
             }
         }
     }

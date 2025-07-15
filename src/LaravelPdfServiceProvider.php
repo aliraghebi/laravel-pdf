@@ -1,11 +1,11 @@
 <?php
 
-namespace ArsamMe\LaravelMpdf;
+namespace ArsamMe\LaravelPdf;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 
-class LaravelMpdfServiceProvider extends ServiceProvider
+class LaravelPdfServiceProvider extends ServiceProvider
 {
 
     /**
