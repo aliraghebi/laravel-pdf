@@ -1,5 +1,5 @@
 {
-  "name": "arsamme/laravel-pdf",
+  "name": "aliraghebi/laravel-pdf",
   "description": "Laravel Mpdf: Using Mpdf in Laravel to generate Pdfs.",
   "keywords": [
     "mpdf",
@@ -16,18 +16,18 @@
   },
   "autoload": {
     "psr-4": {
-      "ArsamMe\\LaravelPdf\\": "src/"
+      "AliRaghebi\\LaravelPdf\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "ArsamMe\\LaravelPdf\\LaravelPdfServiceProvider"
+        "AliRaghebi\\LaravelPdf\\LaravelPdfServiceProvider"
       ],
       "aliases": {
-        "PDF": "ArsamMe\\LaravelPdf\\Facades\\LaravelPdf",
-        "Pdf": "ArsamMe\\LaravelPdf\\Facades\\LaravelPdf",
-        "LaravelPdf": "ArsamMe\\LaravelPdf\\Facades\\LaravelPdf"
+        "PDF": "AliRaghebi\\LaravelPdf\\Facades\\LaravelPdf",
+        "Pdf": "AliRaghebi\\LaravelPdf\\Facades\\LaravelPdf",
+        "LaravelPdf": "AliRaghebi\\LaravelPdf\\Facades\\LaravelPdf"
       }
     }
   }

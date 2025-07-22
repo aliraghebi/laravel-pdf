@@ -1,6 +1,6 @@
 <?php
 
-namespace ArsamMe\LaravelPdf;
+namespace AliRaghebi\LaravelPdf;
 
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Support\Facades\Config;

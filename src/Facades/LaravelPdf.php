@@ -1,8 +1,8 @@
 <?php
 
-namespace ArsamMe\LaravelPdf\Facades;
+namespace AliRaghebi\LaravelPdf\Facades;
 
-use ArsamMe\LaravelPdf\LaravelPdfFactory;
+use AliRaghebi\LaravelPdf\LaravelPdfFactory;
 use Illuminate\Support\Facades\Facade;
 
 class LaravelPdf extends Facade

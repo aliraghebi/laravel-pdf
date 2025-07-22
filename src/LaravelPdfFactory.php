@@ -1,6 +1,6 @@
 <?php
 
-namespace ArsamMe\LaravelPdf;
+namespace AliRaghebi\LaravelPdf;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
